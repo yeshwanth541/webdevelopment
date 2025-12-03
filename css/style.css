@@ -443,3 +443,14 @@ footer {
         transition: color 0.3s;
     }
 }
+
+h2,
+h3 {
+    text-align: center;
+    width: 100%;
+    display: block;
+}
+
+.menu-category {
+    text-align: center;
+}
