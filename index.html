@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian Foods</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        h2,
+        h3 {
+            text-align: center;
+            width: 100%;
+            display: block;
+        }
+
+        .menu-category {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><span>Indian Foods.com</span></a>
+        </div>
+        <nav id="navbar">
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#explore-menu">Explore Menu</a></li>
+                <li><a href="#why-choose-us">Why Choose US</a></li>
+                <li><a href="#cart">Cart (<span id="cart-count">0</span>)</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+           <!-- Carousel Banner -->
+    <section class="carousel-container">
+        <div class="carousel">
+            <div class="carousel-slide active">
+                <img src="images/banner1.png" alt="Delicious Indian Cuisine">
+            </div>
+
+            <div class="carousel-slide">
+                <img src="images/banner2.png" alt="Fresh Biryani">
+            </div>
+            <div class="carousel-slide">
+                <img src="images/banner3.png" alt="Traditional Breakfast">
+            </div>
+            <div class="carousel-slide">
+                <img src="images/banner4.png" alt="Traditional Breakfast">
+            </div>
+        </div>
+        <button class="carousel-btn prev" onclick="moveSlide(-1)">&#10094;</button>
+        <button class="carousel-btn next" onclick="moveSlide(1)">&#10095;</button>
+    </section>
+
+    <section id="explore-menu">
+        <h2>Indian Foods.com Menu</h2>
+
+        <div class="menu-category">
+            <h3>Breakfast</h3>
+            <div class="menu-item"><img src="images/Karam_Idli.jpg" alt="Karam Idli">
+                <p>Karam Idli - $9.99</p><button onclick="addToCart('Karam Idli', 9.99)">Add to Cart</button>
+            </div>
+            <div class="menu-item"><img src="images/Sambar_Idli.jpg" alt="Sambar Idli">
+                <p>Sambar Idli - $12.99</p>
+                <button onclick="addToCart('Sambar Idli', 12.99)">Add to Cart</button>
+            </div>
+            
+            <div class="menu-item"><img src="images/Dosa.jpg" alt="Dosa">
+                <p>Dosa - $13.99</p>
+                <button onclick="addToCart('Dosa', 13.99)">Add to Cart</button>
+            </div>
+            
+            <div class="menu-item"><img src="images/Vada.jpg" alt="Vada">
+                <p>Vada - $9</p>
+                <button onclick="addToCart('Vada', 9.99)">Add to Cart</button>
+            </div>
+            
+            <div class="menu-item"><img src="images/Puri.jpg" alt="Puri">
+                <p>Puri - $12.99</p>
+                <button onclick="addToCart('Puri', 12.99)">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="menu-category">
+            <h3>Biryani & Platters</h3>
+            <div class="menu-item"><img src="images/Chicken Biryani.jpg" alt="Chicken Biryani">
+                <p>Chicken Biryani - $19.99</p><button onclick="addToCart('Chicken Biryani', 19.99)">Add to Cart</button>
+            </div>
+            
+            <div class="menu-item"><img src="images/Fish_Biryani.jpg" alt="Fish Biryani">
+                <p>Fish Biryani - $21.99</p><button onclick="addToCart('Fish Biryani', 21.99)">Add to Cart</button>
+            </div>
+            
+            <div class="menu-item"><img src="images/Mandi_Platter.jpg" alt="Mandi Platter">
+                <p>Mandi Platter - $48.99</p><button onclick="addToCart('Mandi Platter', 48.99)">Add to Cart</button>
+            </div>
+            
+            <div class="menu-item"><img src="images/Egg_Biryani.jpg" alt="Egg Biryani">
+                <p>Egg Biryani - $17.99</p><button onclick="addToCart('Egg Biryani', 17.99)">Add to Cart</button>
+            </div>
+            
+            <div class="menu-item"><img src="images/Bongu_Biryani.jpg" alt="Bongu Biryani">
+                <p>Goat Biryani - $23.99</p><button onclick="addToCart('Bongu Biryani', 23.99)">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="menu-category">
+            <h3>Desserts</h3>
+            <div class="menu-item"><img src="images/Gulab_Jamun.jpg" alt="Gulab Jamun">
+                <p>Gulab Jamun - $4.99</p><button onclick="addToCart('Gulab Jamun', 4.99)">Add to Cart</button>
+            </div>
+            <div class="menu-item"><img src="images/Mysor Pak.jpg" alt="Mysore pak">
+                <p>Mysore Pak - $3.99</p><button onclick="addToCart('Mysore pak', 3.99)">Add to Cart</button>
+            </div>
+            <div class="menu-item"><img src="images/Jilebi.jpg" alt="Jilebi">
+                <p>Jilebi - $6.99</p><button onclick="addToCart('Jilebi', 6.99)">Add to Cart</button>
+            </div>
+            <div class="menu-item"><img src="images/Rasamalai.jpg" alt="Rasamalai">
+                <p>Rasamalai - $4.99</p><button onclick="addToCart('Rasamalai', 4.99)">Add to Cart</button>
+            </div>
+            <div class="menu-item"><img src="images/Halwa.jpg" alt="Halwa">
+                <p>Halwa - $5.99</p><button onclick="addToCart('Halwa', 5.99)">Add to Cart</button>
+            </div>
+            <div class="menu-item"><img src="images/Kalakand.jpg" alt="Kalakand">
+                <p>Kalakand - $5.99</p><button onclick="addToCart('Kalakand', 5.99)">Add to Cart</button>
+            </div>
+
+        </div>
+    </section>
+    <section id="cart">
+        <h2>Your Cart</h2>
+        <ul id="cart-items"></ul>
+        <p>Total: $<span id="cart-total">0</span></p>
+    </section>
+
+    <section id="why-choose-us" class="why-choose-us">
+        <h2>Why Choose Us?</h2>
+        <ul>
+            <li>Fresh Ingredients</li>
+            <li>Authentic Recipes</li>
+            <li>Fast Delivery</li>
+            <li>Excellent Customer Service</li>
+        </ul>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+    </section>
+</main>
+
+    <footer>
+        <p>&copy; 2025 Indian Foods Private Ltd | All Rights Reserved
+        </p>
+    </footer>
+    
+    <script src="js/script.js"></script> 
+</body>
+
+</html>
