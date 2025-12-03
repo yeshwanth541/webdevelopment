@@ -43,6 +43,7 @@ header {
     position: sticky;
     top: 0;
     z-index: 1;
+    grid-row: 1;
 }
 
 .logo span {
@@ -77,6 +78,10 @@ nav ul li a {
 nav ul li a:hover {
     color: #ffcc00;
 
+}
+
+main {
+    grid-row: 2;
 }
 
 /* Banner Section */
@@ -453,4 +458,7 @@ h3 {
 
 .menu-category {
     text-align: center;
+}
+footer {
+    grid-row: 3;
 }
